@@ -9,6 +9,7 @@ on:
     branches: [ main ]
     paths:
       - 'ci-cd-jest-cypress/**'
+  workflow_dispatch:
 
 jobs:
   test:
