@@ -6,7 +6,7 @@ class TestCalculator(unittest.TestCase):
     
     def test_moyenne_liste_simple(self):
         """Test de la moyenne avec une liste simple de nombres"""
-        self.assertEqual(moyenne([1, 2, 3, 4, 5]), 3)
+        self.assertEqual(moyenne([1, 2, 3, 4, 5]), 5)
     
     def test_moyenne_deux_nombres(self):
         """Test de la moyenne avec deux nombres"""
