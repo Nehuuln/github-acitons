@@ -25,7 +25,7 @@ jobs:
     - name: Run Cypress tests
       uses: cypress-io/github-action@v6
       with:
-        browser: chrome
+        browser: edge
         headed: false
     
     - name: Upload screenshots on failure
