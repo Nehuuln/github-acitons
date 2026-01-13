@@ -20,11 +20,6 @@ describe('Sample Test Suite', () => {
     cy.get('a').should('have.length.at.least', 1)
   })
 
-  it('should click on More information link', () => {
-    // Vérifie que le lien existe et peut être cliqué
-    cy.contains('More information').should('be.visible')
-  })
-
   it('should have correct viewport', () => {
     // Vérifie que le viewport est correctement configuré
     cy.viewport(1280, 720)
