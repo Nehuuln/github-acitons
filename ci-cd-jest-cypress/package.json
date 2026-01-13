@@ -1,0 +1,31 @@
+{
+  "name": "ci-cd-jest-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node node_modules/jest/bin/jest.js",
+    "test:watch": "node node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node node_modules/jest/bin/jest.js --coverage",
+    "cypress:open": "node node_modules/cypress/bin/cypress open",
+    "cypress:run": "node node_modules/cypress/bin/cypress run"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "cypress": "^15.8.2",
+    "jest": "^30.2.0",
+    "supertest": "^7.2.2"
+  }
+}
